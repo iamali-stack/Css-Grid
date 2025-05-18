@@ -1,0 +1,224 @@
+/* Large screens (desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+/* Medium screens (tablets, 768px to 1199px) */
+@media screen and (max-width: 1199px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "child-1 child-2"
+      "child-3 child-3"
+      "child-4 child-5"
+      "child-6 child-7"
+      "child-8 child-9"
+      "child-10 child-11"
+      "child-12 child-12";
+  }
+
+  .child-3 h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .child-5-image {
+    width: 180%;
+    left: -200px;
+  }
+}
+
+/* Small screens (large phones, 481px to 767px) */
+@media screen and (max-width: 767px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "child-3"
+      "child-1"
+      "child-2"
+      "child-4"
+      "child-5"
+      "child-6"
+      "child-7"
+      "child-8"
+      "child-9"
+      "child-10"
+      "child-11"
+      "child-12";
+  }
+
+  .child-1-content,
+  .child-5-content,
+  .child-6-content {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .child-3 h1 {
+    width: 90%;
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .child-4 h3,
+  .child-8 h3,
+  .child-9 h3,
+  .child-12 h3 {
+    width: 90%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .child-5-image {
+    width: 120%;
+    left: -50px;
+  }
+}
+
+/* Extra small screens (phones, 480px and down) */
+@media screen and (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "child-3"
+      "child-1"
+      "child-2"
+      "child-4"
+      "child-8"
+      "child-5"
+      "child-6"
+      "child-10"
+      "child-9"
+      "child-7"
+      "child-11"
+      "child-12";
+  }
+
+  .child-1-content {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .child-2-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .child-3 h1 {
+    width: 100%;
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 14px;
+  }
+
+  .child-3 a {
+    font-size: 14px;
+  }
+
+  .child-4-content {
+    padding: 20px;
+  }
+
+  .child-4 img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .child-4 h3 {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .child-5-content {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .child-5-image {
+    width: 100%;
+    max-width: 300px;
+    left: 0;
+    position: relative;
+  }
+
+  .child-6-content {
+    padding: 20px;
+  }
+
+  .child-7 {
+    padding: 20px;
+  }
+
+  .child-8 {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .child-8 img {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .child-9 {
+    padding: 20px;
+  }
+
+  .child-9 .image-9 {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .child-10 {
+    height: auto;
+    padding: 20px;
+  }
+
+  .circle-10 {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .child-11 {
+    padding: 20px;
+  }
+
+  .child-12 {
+    padding: 20px;
+  }
+
+  .child-12 img {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .child-12 h3 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* Fix for very small screens */
+@media screen and (max-width: 320px) {
+  .child-3 h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .child-4 h3,
+  .child-8 h3,
+  .child-9 h3,
+  .child-12 h3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
